@@ -1,0 +1,101 @@
+.hero {
+    @apply w-full bg-black h-dvh p-4 relative z-1
+}
+
+.audio {
+    @apply border border-cloud/30 rounded-full p-4 w-80 mx-auto cursor-pointer hover:border-japonica transition-all duration-300
+}
+
+.badge {
+    @apply flex justify-center items-center gap-4 text-cloud  font-sans
+}
+
+.badge .text {
+    @apply text-sm tracking-wider 
+}
+
+.badge .icon svg {
+    @apply w-5 h-5 text-japonica
+}
+
+.floating-text span {
+    @apply absolute text-sirocco text-xs bg-outerspace border border-cloud/30 rounded-full py-1 px-2
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(-6deg); }
+  50% { transform: translateY(-10px) rotate(-3deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px) rotate(-6deg); }
+  50% { transform: translateY(10px) rotate(-3deg); }
+}
+
+.floating-text span.text-1 {
+    @apply top-[16%] -rotate-12;
+    animation: float-slow 3s ease-in-out infinite;
+}
+
+.floating-text span.text-2 {
+    @apply top-[18%] rotate-12 right-10 -z-1;
+    animation: float-reverse 3s ease-in-out infinite;
+}
+    
+.floating-text span.text-3 {
+    @apply top-[35%] rotate-12 left-10 -z-1;
+    animation: float-reverse 3s ease-in-out infinite;
+}
+.floating-text span.text-4 {
+    @apply top-[37%] rotate-2 right-12 -z-1;
+    animation: float-slow 3s ease-in-out infinite;
+}
+
+.floating-text span.text-5 {
+    @apply hidden md:block
+}
+.floating-text span.text-6 {
+    @apply hidden md:block
+}
+.floating-text span.text-7 {
+    @apply hidden md:block
+}
+
+
+
+.tagline {
+    @apply mt-10 flex justify-center text-japonica font-sans text-xs uppercase font-normal tracking-[0.2rem]
+}
+
+.overlay-circle {
+    @apply block w-56 h-20 rounded-full bg-japonica absolute -z-10 -rotate-12 blur-[100px] top-[26%] left-24
+}
+
+.title {
+    @apply mt-10 text-center font-serif text-cloud text-4xl leading-11
+}
+
+.title span {
+    @apply italic text-japonica
+}
+
+.description  {
+    @apply mt-10 flex justify-center
+}
+
+.description p {
+    @apply max-w-[90%] text-center text-[18px] text-cloud/70 font-light
+}
+
+.cta {
+    @apply mt-10 flex justify-center
+}
+
+.cta button {
+    @apply bg-linear-to-r from-japonica to-[#E4B372] rounded-full py-4 px-6 w-4/5 text-cloud/80 font-semibold border-none outline-none cursor-pointer
+    hover:scale-105 transition-all duration-500
+}
+
+.tiny-text {
+    @apply mt-4 text-center uppercase tracking-[2px] text-xs text-cloud/70 font-light
+}

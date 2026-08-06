@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Font Cormorant Normal */
+@font-face {
+  font-family: "Cormorant";
+  src: url("../src/assets/fonts/Cormorant-VariableFont_wght.ttf");
+  font-weight: 100 800;
+  font-style: normal;
+}
+
+
+/* Font Jost normal */
+@font-face {
+  font-family: "Jost";
+  src: url("../src/assets/fonts/Jost-VariableFont_wght.ttf");
+  font-weight: 100 800;
+  font-style: normal;
+}
+
+
+
+@theme {
+  --font-serif: "Cormorant", serif;
+  --font-sans: "Jost", sans-serif;
+  --color-black: #1d2222;
+  --color-outerspace: #262b2b;
+  --color-sirocco: #747979;
+  --color-japonica: #d77a64;
+  --color-cloud: #f6f6f6;
+}
+
+
+@import "./section/hero.css";
