@@ -1,5 +1,5 @@
 .hero {
-    @apply w-full bg-black h-dvh p-4 relative z-1
+    @apply w-full bg-black h-dvh p-4 relative z-1 flex flex-col justify-center
 }
 
 .audio {
@@ -19,7 +19,7 @@
 }
 
 .floating-text span {
-    @apply absolute text-sirocco text-xs bg-outerspace border border-cloud/30 rounded-full py-1 px-2
+    @apply absolute text-sirocco text-xs md:text-base bg-outerspace border border-cloud/30 rounded-full py-1 px-2 md:py-2 md:px-3
 }
 
 @keyframes float-slow {
@@ -33,46 +33,52 @@
 }
 
 .floating-text span.text-1 {
-    @apply top-[16%] -rotate-12;
+    @apply top-[13%] md:top-[15%] md:left-[4%] -rotate-12;
     animation: float-slow 3s ease-in-out infinite;
 }
 
 .floating-text span.text-2 {
-    @apply top-[18%] rotate-12 right-10 -z-1;
+    @apply top-[12%] md:top-[7%] rotate-12 right-6 -z-1;
     animation: float-reverse 3s ease-in-out infinite;
 }
     
 .floating-text span.text-3 {
-    @apply top-[35%] rotate-12 left-10 -z-1;
+    @apply top-[50%] md:top-[80%] rotate-12 left-5 -z-1;
     animation: float-reverse 3s ease-in-out infinite;
 }
 .floating-text span.text-4 {
-    @apply top-[37%] rotate-2 right-12 -z-1;
+    @apply top-[55%] md:top-[78%] rotate-2 right-12 -z-1;
     animation: float-slow 3s ease-in-out infinite;
 }
 
 .floating-text span.text-5 {
-    @apply hidden md:block
+    @apply hidden md:block md:right-[6%] md:top-[28%] -rotate-12;
+    animation: float-slow 3s ease-in-out infinite;
 }
 .floating-text span.text-6 {
-    @apply hidden md:block
+    @apply hidden md:block md:top-[31%] md:left-[5%] -z-1 rotate-12;
+    animation: float-reverse 3s ease-in-out infinite;
 }
 .floating-text span.text-7 {
-    @apply hidden md:block
+    @apply hidden md:block md:top-[10%] md:left-[35%] rotate-5;
+    animation: float-reverse 3s ease-in-out infinite;
 }
-
 
 
 .tagline {
-    @apply mt-10 flex justify-center text-japonica font-sans text-xs uppercase font-normal tracking-[0.2rem]
+    @apply mt-10 flex justify-center text-japonica font-sans text-xs md:text-sm uppercase font-normal tracking-[0.2rem]
 }
 
 .overlay-circle {
-    @apply block w-56 h-20 rounded-full bg-japonica absolute -z-10 -rotate-12 blur-[100px] top-[26%] left-24
+    @apply block w-56 h-20 rounded-full bg-japonica absolute -z-10 -rotate-12 md:rotate-180 blur-[150px] top-[26%] left-24 md:left-56
 }
 
 .title {
-    @apply mt-10 text-center font-serif text-cloud text-4xl leading-11
+    @apply mt-10 text-center font-serif text-cloud text-4xl md:text-6xl leading-11 md:leading-16
+}
+
+.title br {
+    @apply block md:hidden
 }
 
 .title span {
@@ -84,7 +90,7 @@
 }
 
 .description p {
-    @apply max-w-[90%] text-center text-[18px] text-cloud/70 font-light
+    @apply max-w-[90%] md:max-w-[70%] text-center text-lg md:text-xl text-cloud/70 font-light
 }
 
 .cta {
@@ -93,9 +99,9 @@
 
 .cta button {
     @apply bg-linear-to-r from-japonica to-[#E4B372] rounded-full py-4 px-6 w-4/5 text-cloud/80 font-semibold border-none outline-none cursor-pointer
-    hover:scale-105 transition-all duration-500
+    hover:scale-105 transition-all duration-500 md:text-xl
 }
 
 .tiny-text {
-    @apply mt-4 text-center uppercase tracking-[2px] text-xs text-cloud/70 font-light
+    @apply mt-4 text-center uppercase tracking-[2px] text-xs md:text-sm text-cloud/70 font-light
 }
