@@ -1,5 +1,13 @@
+body {
+    @apply h-[5000px]
+}
+
+.background {
+    @apply bg-black
+}
+
 .hero {
-    @apply w-full bg-black h-dvh p-4 relative z-1 flex flex-col justify-center
+    @apply w-full bg-transparent h-dvh p-4 relative z-1 flex flex-col justify-center
 }
 
 .audio {
@@ -65,17 +73,18 @@
 }
 
 
-.tagline {
+.tagline,
+.section-label {
     @apply mt-10 flex justify-center text-japonica font-sans text-xs md:text-sm uppercase font-normal tracking-[0.2rem]
 }
 
 .overlay-circle {
-    @apply block w-50 h-20 md:w-70 md:h-28 rounded-full bg-japonica absolute -z-10 
-    md:rotate-180  blur-[150px] md:blur-[200px] top-[34%] md:top-[44%]  left-24 md:left-[35%] lg:left-[40%] lg:top-[38%]
+    @apply block w-50 h-20 md:w-70 md:h-20 rounded-full bg-japonica absolute -z-10 
+    md:rotate-180  blur-[150px] md:blur-[150px] top-[34%] md:top-[44%]  left-24 md:left-[35%] lg:left-[40%] lg:top-[28%]
 }
 
 .title {
-    @apply mt-10 text-center font-serif text-cloud text-4xl md:text-6xl lg:text-7xl leading-11 md:leading-16 lg:leading-20
+    @apply mt-10 text-center  font-serif text-cloud text-4xl md:text-6xl lg:text-7xl leading-11 md:leading-16 lg:leading-20
 }
 
 

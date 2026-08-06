@@ -22,8 +22,8 @@
 @theme {
   --font-serif: "Cormorant", serif;
   --font-sans: "Jost", sans-serif;
-  --color-black: #1d2222;
-  --color-outerspace: #262b2b;
+  --color-black: #1D2222;
+  --color-outerspace: #262B2B;
   --color-sirocco: #747979;
   --color-japonica: #d77a64;
   --color-cloud: #f6f6f6;
@@ -31,3 +31,4 @@
 
 
 @import "./section/hero.css";
+@import "./section/philosophy.css";
