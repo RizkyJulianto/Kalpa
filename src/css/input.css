@@ -27,8 +27,10 @@
   --color-sirocco: #747979;
   --color-japonica: #d77a64;
   --color-cloud: #f6f6f6;
+  --color-merino: #FCFBF6;
 }
 
 
 @import "./section/hero.css";
 @import "./section/philosophy.css";
+@import "./section/about.css";

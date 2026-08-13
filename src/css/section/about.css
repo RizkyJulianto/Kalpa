@@ -1,0 +1,75 @@
+.about {
+ @apply w-full relative z-10 px-4 py-10 bg-merino
+}
+
+.about .about-title {
+    @apply mt-10 text-center text-3xl md:text-6xl font-serif font-light text-black/90 leading-9 md:leading-16 md:px-14 lg:max-w-225 lg:mx-auto
+}
+
+.about .main-content {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-y-10 px-4 lg:px-10 mt-14 lg:mt-20 lg:justify-items-end lg:items-center
+}
+
+.about .about-description {
+    @apply order-2 lg:order-0 text-sm md:text-xl lg:text-lg text-black/80 leading-6 md:leading-10 lg:leading-8 text-justify 
+}
+
+.about .about-description .paragraph-2 {
+    @apply mt-7
+}
+
+
+
+.about .about-images img {
+    @apply rounded-xl shadow-md lg:w-125 lg:h-100 object-cover
+}
+
+.about .about-images .caption-images {
+    @apply mt-4 text-center lg:text-left
+}
+
+.about .about-images .caption-images .title-images {
+    @apply font-serif text-black/90 text-xl md:text-2xl
+}
+
+.about .about-images .caption-images .label {
+    @apply uppercase mt-1 text-black/60  tracking-[2px] text-xs md:text-sm
+}
+
+.about .advantages {
+    @apply grid grid-cols-1 md:grid-cols-3 mt-20 lg:mt-30 px-4 lg:px-10 gap-y-4 lg:gap-y-6   
+}
+
+.about .advantages .col {
+    @apply flex flex-col items-center md:items-start gap-2 md:pr-10 lg:pr-5 border-b md:border-b-0 border-black/20 pb-10 md:pb-0 
+}
+
+.about .advantages .col:nth-child(1) {
+    @apply md:border-r
+}
+.about .advantages .col:nth-child(2) {
+    @apply md:border-r md:pl-6
+}
+.about .advantages .col:nth-child(3) {
+    @apply  md:pl-6
+}
+
+.about .advantages .col .label-advantages {
+    @apply text-japonica font-serif text-3xl md:text-4xl 
+}
+
+.about .advantages .col .title-advantages {
+    @apply font-serif text-base lg:text-xl tracking-[1px] uppercase font-bold opacity-80
+}
+
+.about .advantages .col .description-advantages {
+    @apply text-center md:text-left md:text-base lg:text-lg text-black/70 text-sm max-w-70 lg:max-w-full
+}
+
+.about .advantages .col .border-bottom {
+    @apply bg-black/20 h-px w-full mt-4 
+}
+
+
+
+
