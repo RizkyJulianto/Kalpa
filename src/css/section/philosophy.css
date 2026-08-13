@@ -1,5 +1,12 @@
 .philosophy {
-    @apply w-full relative z-10 px-4 py-20 bg-linear-to-b from-black via-[#4E3A34] to-[#F0DBD2]
+    @apply w-full relative z-10 px-4 py-20;
+    background: linear-gradient(
+        to bottom,
+        var(--color-black) 10%,
+        #4E3A34 60%,
+        #F0DBD2 85%,
+        var(--color-merino) 100%
+    )
 }
 
 .philosophy-title {
@@ -7,7 +14,8 @@
 }
 
 .philosophy-title span {
-    @apply text-japonica italic
+    @apply text-japonica italic;
+    text-shadow: 0 0 16px var(--color-japonica);
 }
 
 .philosophy-description {
