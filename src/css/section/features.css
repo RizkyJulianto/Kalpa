@@ -1,0 +1,77 @@
+.features {
+  @apply w-full relative z-10 px-6 lg:px-14 py-10 bg-merino;
+}
+
+.features .section-label-features {
+  @apply mt-10 text-japonica font-sans text-xs md:text-sm uppercase font-normal tracking-[0.2rem];
+}
+
+.features .features-heading {
+    @apply grid grid-cols-1 lg:grid-cols-2 items-end
+}
+
+.features .features-heading .features-title {
+  @apply mt-6 text-3xl lg:text-5xl font-serif text-black/90 ;
+}
+
+.features .features-heading .features-title span {
+  @apply italic font-semibold text-4xl lg:text-6xl;
+}
+
+.features .features-heading .features-subtitle {
+  @apply mt-6 text-black/80 leading-6 md:max-w-150 md:text-xl lg:text-lg  md:leading-8;
+}
+
+.features .border-bottom {
+  @apply mt-14 w-full h-px bg-black/20;
+}
+
+.features .features-card {
+  @apply mt-20 grid grid-cols-1 lg:grid-cols-3 border border-black/10 rounded-4xl  ;
+}
+
+.features .features-card .card {
+    @apply py-10 px-8   transition-all duration-300 cursor-pointer
+}
+
+.features .features-card .card:nth-child(1) {
+    @apply border-b border-black/20 lg:border-r
+}
+.features .features-card .card:nth-child(2) {
+    @apply border-b border-black/20 lg:border-r
+}
+
+.features .features-card .card:hover {
+    @apply bg-white
+}
+
+
+
+ 
+
+.features .features-card .card .card-label {
+  @apply  flex justify-between uppercase items-end;
+}
+
+.features .features-card .card .card-label span:nth-child(1) {
+  @apply text-japonica text-4xl md:text-6xl  font-serif;
+}
+.features .features-card .card .card-label span:nth-child(2) {
+  @apply opacity-70 text-sm md:text-base lg:text-sm tracking-[3px]
+}
+
+.features .features-card .card .card-title {
+    @apply mt-6 lg:mt-10 font-serif text-3xl md:text-4xl lg:text-3xl text-black/90
+}
+
+.features .features-card .card .card-description {
+    @apply mt-4 text-black/80 text-sm md:text-lg lg:text-base
+}
+
+.features .features-card .card .card-border-bottom {
+    @apply h-[0.5px] w-[30%] bg-japonica mt-8 rounded-full
+}
+
+.features .features-card .card .card-border-bottom {
+    @apply group-hover:w-full transition-all duration-300
+}

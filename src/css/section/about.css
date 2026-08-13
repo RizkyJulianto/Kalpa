@@ -11,7 +11,7 @@
 }
 
 .about .about-description {
-    @apply order-2 lg:order-0 text-sm md:text-xl lg:text-lg text-black/80 leading-6 md:leading-10 lg:leading-8 text-justify 
+    @apply order-2 lg:order-0 text-base md:text-xl lg:text-lg text-black/80 leading-6 md:leading-10 lg:leading-8 text-justify 
 }
 
 .about .about-description .paragraph-2 {
@@ -41,7 +41,7 @@
 }
 
 .about .advantages .col {
-    @apply flex flex-col items-center md:items-start gap-2 md:pr-10 lg:pr-5 border-b md:border-b-0 border-black/20 pb-10 md:pb-0 
+    @apply flex flex-col items-center md:items-start gap-2 md:pr-5 border-b md:border-b-0 border-black/20 pb-10 md:pb-0 
 }
 
 .about .advantages .col:nth-child(1) {
@@ -63,7 +63,7 @@
 }
 
 .about .advantages .col .description-advantages {
-    @apply text-center md:text-left md:text-base lg:text-lg text-black/70 text-sm max-w-70 lg:max-w-full
+    @apply text-center md:text-left md:text-lg lg:text-lg text-black/70 text-sm max-w-70 lg:max-w-full
 }
 
 .about .advantages .col .border-bottom {

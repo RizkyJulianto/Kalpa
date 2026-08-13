@@ -111,7 +111,7 @@ body {
     box-shadow: 0 0 20px rgba(215, 122, 100, 0.35); 
   }
   50% {
-    transform: scale(1.03); /* Tombol mengembang sedikit */
+    transform: scale(1.03); 
     box-shadow: 0 0 35px rgba(215, 122, 100, 0.6); 
   }
 }
