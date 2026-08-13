@@ -1,0 +1,39 @@
+.ritual {
+  @apply w-full  relative grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-y-10 z-10 px-6 lg:px-14 py-36 bg-merino;
+}
+
+.ritual .ritual-images img {
+    @apply rounded-xl h-74 md:h-full md:w-full lg:w-125 lg:h-110 object-cover shadow-xl md:object-center
+}
+
+.ritual .ritual-textbox .ritual-label-section {
+  @apply  text-japonica font-sans text-sm md:text-lg lg:text-sm uppercase font-normal tracking-[0.2rem];
+}
+
+.ritual .ritual-textbox .ritual-title {
+    @apply mt-4 text-3xl md:text-5xl font-serif max-w-[90%]  text-black/90 md:leading-14
+}
+
+.ritual .ritual-textbox .ritual-title span {
+    @apply italic font-semibold 
+}
+
+.ritual .ritual-textbox .ritual-subtitle {
+    @apply mt-6 text-black/80 max-w-[90%] md:text-xl lg:text-lg
+}
+
+.ritual .ritual-textbox .ritual-cta {
+    @apply mt-10
+}
+
+.ritual .ritual-textbox .ritual-cta button {
+    @apply bg-linear-to-r from-japonica to-[#E4B372] rounded-full py-3 px-8 md:px-12 text-merino font-semibold md:text-xl lg:text-base transition-all duration-300 cursor-pointer;
+    box-shadow: 0 0 8px var(--color-japonica)
+}
+
+.ritual .ritual-textbox .ritual-cta button:hover {
+    @apply scale-105
+}
+
+
+
