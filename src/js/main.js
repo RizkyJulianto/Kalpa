@@ -37,36 +37,71 @@ const moodProducts = {
 
 // Logic Finder Product by Mood
 document.addEventListener("DOMContentLoaded", () => {
-    const buttonFinder = document.querySelectorAll(".button-finder button");
-    const cardRecommendation = document.getElementById("recommendation-card");
-    const imgRecommendation = document.getElementById("recommendation-img");
-    const titleRecommendation = document.getElementById("recommendation-title");
-    const labelRecommendation = document.getElementById("recommendation-label");
-    const materialsRecommendation = document.getElementById("recommendation-materials");
-    const descriptionRecommendation = document.getElementById("recommendation-description");
+  const buttonFinder = document.querySelectorAll(".button-finder button");
+  const cardRecommendation = document.getElementById("recommendation-card");
+  const imgRecommendation = document.getElementById("recommendation-img");
+  const titleRecommendation = document.getElementById("recommendation-title");
+  const labelRecommendation = document.getElementById("recommendation-label");
+  const materialsRecommendation = document.getElementById(
+    "recommendation-materials",
+  );
+  const descriptionRecommendation = document.getElementById(
+    "recommendation-description",
+  );
 
-    buttonFinder.forEach((btn) => {
-        btn.addEventListener("click", function() {
-            const moodKey = this.dataset.mood;
-            const data = moodProducts[moodKey];
+  buttonFinder.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const moodKey = this.dataset.mood;
+      const data = moodProducts[moodKey];
 
-            if(!data) return;
+      if (!data) return;
 
-            buttonFinder.forEach((b) => b.classList.remove("active"));
-            this.classList.add("active");
+      buttonFinder.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
 
-            cardRecommendation.style.opacity = "0.4";
+      cardRecommendation.style.opacity = "0.4";
 
+      setTimeout(() => {
+        imgRecommendation.src = data.image;
+        labelRecommendation.textContent = data.label;
+        titleRecommendation.textContent = data.title;
+        materialsRecommendation.textContent = data.materials;
+        descriptionRecommendation.textContent = data.description;
 
-            setTimeout(() => {
-                imgRecommendation.src = data.image;
-                labelRecommendation.textContent = data.label
-                titleRecommendation.textContent = data.title
-                materialsRecommendation.textContent = data.materials
-                descriptionRecommendation.textContent = data.description
-
-                cardRecommendation.style.opacity = "1";
-            }, 150);
-        })
+        cardRecommendation.style.opacity = "1";
+      }, 150);
     });
-})
+  });
+});
+
+// Logic Filter Product Section
+const filterButtons = document.querySelectorAll("button.filter");
+const productCards = document.querySelectorAll(".product-card");
+
+filterButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const selectedFilter = this.dataset.filter;
+
+    filterButtons.forEach((b) => b.classList.remove("active"));
+    this.classList.add("active");
+
+    productCards.forEach((card) => {
+      const cardCategory = card.dataset.category;
+
+      if (selectedFilter === "all" || cardCategory.includes(selectedFilter)) {
+        card.classList.remove("hidden");
+
+        setTimeout(() => {
+          card.style.opacity = "1";
+          card.style.transform = "scale(1)";
+        }, 50);
+      } else {
+        card.style.opacity = "0";
+        card.style.transform = "scale(0.95)";
+        setTimeout(() => {
+          card.classList.add("hidden");
+        }, 200);
+      }
+    });
+  });
+});

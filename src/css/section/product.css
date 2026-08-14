@@ -1,0 +1,68 @@
+.product {
+  @apply w-full relative z-10 px-6 lg:px-14 py-26 bg-merino;
+}
+
+.product .product-heading {
+    @apply grid grid-cols-1 
+}
+
+.product .product-heading .product-title {
+    @apply text-3xl md:text-5xl font-serif text-black/90 leading-10
+}
+
+.product .product-heading .product-title span {
+    @apply text-4xl md:text-6xl italic font-semibold
+}
+
+.product .product-filter-group {
+    @apply flex gap-3 md:gap-5 mt-7 flex-wrap
+}
+
+.product .product-filter-group button {
+    @apply rounded-full py-1 px-5 border border-black/30  uppercase text-black/70 md:text-lg
+}
+
+.product .product-filter-group button.active {
+    @apply bg-japonica rounded-full py-1 px-5   uppercase text-white
+}
+
+.product .border-bottom {
+    @apply w-full rounded-full h-px bg-black/20 mt-8
+}
+
+.product .product-card-group {
+    @apply mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 
+}
+
+.product .product-card-group .product-card {
+    @apply rounded-xl border border-black/20 relative shadow-md transition-all duration-300 hover:scale-105 
+}
+
+.product .product-card-group .product-card-badge {
+    @apply absolute font-medium  bg-merino/90 rounded-full py-2 px-4 text-black/80  uppercase tracking-[2px] top-4 left-4 text-xs
+}
+
+
+.product .product-card-group .product-card-images img {
+    @apply h-66 w-full object-cover rounded-t-xl
+}
+
+.product .product-card-group .product-card-title {
+    @apply text-[28px] md:text-3xl lg:text-2xl mt-6 px-7 font-serif text-black/90
+}
+
+.product .product-card-group .product-card-materials {
+    @apply mt-1 px-7 text-black/70 text-sm  tracking-wide
+}
+
+.product .product-card-group .product-card-footer {
+    @apply flex justify-between py-8 px-7 items-center
+}
+
+.product .product-card-group .product-card-footer .product-card-price {
+    @apply font-serif text-2xl md:text-[24px] text-japonica
+}
+
+.product .product-card-group .product-card-footer .product-card-cta a {
+    @apply border border-japonica rounded-full py-1 px-4 uppercase text-japonica transition-all duration-300 hover:bg-japonica hover:text-white
+}

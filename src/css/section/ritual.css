@@ -15,7 +15,7 @@
 }
 
 .ritual .ritual-textbox .ritual-title span {
-    @apply italic font-semibold text-6xl
+    @apply italic font-semibold text-4xl md:text-6xl
 }
 
 .ritual .ritual-textbox .ritual-subtitle {
