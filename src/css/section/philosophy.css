@@ -1,5 +1,5 @@
 .philosophy {
-    @apply w-full relative z-10 px-4 py-20;
+    @apply w-full relative z-10 px-4 py-20 -scroll-mt-16;
     background: linear-gradient(
         to bottom,
         var(--color-black) 10%,

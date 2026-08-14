@@ -1,5 +1,5 @@
 .mood-finder {
-  @apply w-full relative z-10 px-6 lg:px-14 py-20 bg-merino;
+  @apply w-full relative z-10 px-6 lg:px-14 py-20 bg-merino -scroll-mt-16;
 }
 
 .mood-finder .mood-finder-card {
