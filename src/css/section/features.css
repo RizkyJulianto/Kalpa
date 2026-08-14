@@ -31,7 +31,7 @@
 }
 
 .features .features-card .card {
-    @apply py-10 px-8   transition-all duration-300 cursor-pointer
+    @apply py-10 px-8   transition-all duration-300 cursor-pointer hover:bg-white
 }
 
 .features .features-card .card:nth-child(1) {
@@ -39,10 +39,6 @@
 }
 .features .features-card .card:nth-child(2) {
     @apply border-b border-black/20 lg:border-r
-}
-
-.features .features-card .card:hover {
-    @apply bg-white
 }
 
 

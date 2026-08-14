@@ -11,11 +11,11 @@
 }
 
 .ritual .ritual-textbox .ritual-title {
-    @apply mt-4 text-3xl md:text-5xl font-serif max-w-[90%]  text-black/90 md:leading-14
+    @apply mt-4 text-3xl md:text-5xl font-serif   text-black/90 md:leading-14
 }
 
 .ritual .ritual-textbox .ritual-title span {
-    @apply italic font-semibold 
+    @apply italic font-semibold text-6xl
 }
 
 .ritual .ritual-textbox .ritual-subtitle {

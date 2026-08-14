@@ -270,7 +270,7 @@
           <span>Ritual Kalpa </span>
         </div>
         <div class="ritual-title">
-          <h2>
+          <h2>r
             Nyalakan. Tarik napas empat detik.
             <span>Biarkan ruangmu pelan.</span>
           </h2>
@@ -290,7 +290,77 @@
     </section>
     <!-- End Ritual Section -->
 
+    <!-- Mood Finder Section -->
+    <section class="mood-finder" id="mood-finder">
+      <div class="mood-finder-card">
+        <div class="mood-label-section">
+          <span>Scent Finder</span>
+        </div>
+
+        <div class="mood-title">
+          <h2>
+            Bingung Memilih? <span>Temukan Aroma yang Pas untuk Mood-mu.</span>
+          </h2>
+        </div>
+
+        <div class="mood-subtitle">
+          <p>
+            Pilih suasana yang ingin kamu ciptakan saat ini, dan biarkan kami
+            merekomendasikan lilin aromaterapi yang tepat.
+          </p>
+        </div>
+
+        <div class="mood-button-finder">
+          <div class="button-finder">
+            <button class="active" data-mood="tidur">🌛 Butuh Tidur Nyenyak</button>
+          </div>
+          <div class="button-finder">
+            <button data-mood="fokus">🖥️ Fokus Kerja / Belajar</button>
+          </div>
+          <div class="button-finder">
+            <button data-mood="stres">🧘 Redakan Stres & Penat</button>
+          </div>
+          <div class="button-finder">
+            <button data-mood="santai">☕ Santai Akhir Pekan</button>
+          </div>
+        </div>
+
+        <div class="mood-recommendation-card" id="recommendation-card">
+          <div class="recommendation-card-images">
+            <img src="src/assets/images/tanah-basah.jpg" alt="" id="recommendation-img"/>
+          </div>
+
+          <div class="recommendation-textbox">
+            <div class="recommendation-card-label">
+              <span id="recommendation-label">94% Match for Your Mood</span>
+            </div>
+  
+            <div class="recommendation-card-title">
+              <h4 id="recommendation-title">Tanah Basah</h4>
+            </div>
+  
+            <div class="recommendation-card-materials">
+              <p id="recommendation-materials">PATCHOULI · BERGAMOT · SANDALWOOD</p>
+            </div>
+  
+            <div class="recommendation-card-description">
+              <p id="recommendation-description">
+                Vetiver menurunkan tempo napas, aroma tanah basah menandai malam
+                sudah selesai. Nyalakan 30 menit sebelum tidur.
+              </p>
+            </div>
+  
+            <div class="recommendation-card-cta">
+              <a href="#product">Lihat Produk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Mood Finder Section -->
+
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="src/js/main.js"></script>
     <script>
       lucide.createIcons();
     </script>
