@@ -1,0 +1,43 @@
+.review {
+  @apply w-full relative z-10  px-6 lg:px-14 py-16 lg:py-28  bg-merino;
+}
+
+.review .social-proof {
+    @apply grid grid-cols-1 md:grid-cols-3  lg:flex-row lg:max-w-full mx-auto border border-black/20 rounded-2xl shadow-md lg:justify-between lg:px-10
+}
+
+.review .social-proof .proof {
+    @apply border-b md:border-r  border-black/20 text-center py-16
+} 
+
+.review .social-proof .proof:nth-child(3) {
+    @apply border-0
+}
+
+.review .social-proof .proof .proof-percentage {
+    @apply text-japonica font-serif text-6xl md:text-5xl
+}
+
+.review .social-proof .proof .proof-title {
+    @apply mt-3 uppercase text-black/80 tracking-[2px] md:max-w-[80%] md:mx-auto
+}
+
+.review .review-quote {
+    @apply mt-20 bg-white lg:max-w-[65%] lg:mx-auto border border-black/20 rounded-2xl flex flex-col justify-center items-center py-12 px-8 shadow-md
+}
+
+.review .review-quote .quote-icon  {
+    @apply text-japonica text-7xl font-serif
+}
+
+.review .review-quote .quote-text {
+    @apply text-center font-serif text-2xl md:text-3xl text-black/90 leading-10
+}
+
+.review .review-quote .quote-text span {
+    @apply italic
+}
+
+.review .review-quote .quote-narator {
+    @apply mt-10 uppercase text-sm md:text-base text-black/70 tracking-[2px]
+}
