@@ -15,9 +15,19 @@
     @apply border border-cloud/30 rounded-full p-4 w-80 mx-auto cursor-pointer hover:border-japonica transition-all duration-300
 }
 
-.badge {
-    @apply flex justify-center items-center gap-4 text-cloud  font-sans
+.audio.active {
+    @apply border-japonica
 }
+
+.badge{
+    @apply flex justify-center items-center gap-4 text-cloud  font-sans cursor-pointer
+}
+
+.badge button {
+    @apply cursor-pointer
+}
+
+
 
 .badge .text {
     @apply text-sm tracking-wider 

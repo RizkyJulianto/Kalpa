@@ -1,3 +1,53 @@
+const audioRain = document.getElementById("ambient-audio");
+const heroBadge = document.querySelector(".audio");
+const heroButton = document.querySelector(".badge button");
+const philoBadge = document.querySelector(".sound");
+const philoButton = document.querySelector(".sound button");
+
+let isPlaying = false;
+
+
+function updateAudioUI(playing) {
+  if (playing) {
+    
+    if (heroBadge) heroBadge.classList.add("active");
+    if (heroButton) heroButton.textContent = "🔊 Suara Hujan & Api Lilin";
+
+    if (philoBadge) philoBadge.classList.add("active");
+    if (philoButton) philoButton.textContent = "🔊 Hentikan Suara";
+  } else {
+    
+    if (heroBadge) heroBadge.classList.remove("active");
+    if (heroButton) heroButton.textContent = "🔉 Putar Suara Hujan & Api Lilin";
+
+    if (philoBadge) philoBadge.classList.remove("active");
+    if (philoButton) philoButton.textContent = "🔉 Putar Suara";
+  }
+}
+
+
+function toggleAudio() {
+  if (!audioRain) return;
+
+  if (!isPlaying) {
+    audioRain.play()
+      .then(() => {
+        isPlaying = true;
+        updateAudioUI(true);
+      })
+      .catch((err) => console.warn("Audio play blocked by browser:", err));
+  } else {
+    audioRain.pause();
+    isPlaying = false;
+    updateAudioUI(false);
+  }
+}
+
+
+if (heroBadge) heroBadge.addEventListener("click", toggleAudio);
+if (philoBadge) philoBadge.addEventListener("click", toggleAudio);
+
+
 // Data Product for Mood Finder
 const moodProducts = {
   tidur: {
