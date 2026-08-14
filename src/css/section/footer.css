@@ -1,0 +1,63 @@
+.footer {
+  @apply relative w-full py-20 px-6 lg:px-14 bg-[#163922];
+}
+
+.footer .footer-top-content {
+  @apply grid grid-cols-1 md:grid-cols-[2fr_2fr_2fr]  gap-y-12 md:border-b border-white/60;
+}
+
+.footer .footer-top-content .footer-col:nth-child(3) {
+  @apply border-b md:border-0 border-white/50 pb-16;
+}
+
+.footer .footer-top-content .footer-col .footer-brand {
+  @apply text-white font-serif text-4xl;
+}
+
+.footer .footer-top-content .footer-col .footer-tagline {
+  @apply text-white/70 mt-3;
+}
+
+.footer .footer-top-content .footer-col .footer-label-col {
+  @apply text-japonica font-sans text-sm md:text-lg lg:text-sm uppercase font-normal tracking-[0.2rem];
+}
+
+.footer .footer-top-content .footer-col .footer-links {
+  @apply mt-3 text-white/70;
+}
+
+.footer .footer-top-content .footer-col .footer-links ul li {
+  @apply mb-3 hover:text-white transition-all duration-300;
+}
+
+.footer .footer-top-content .footer-col .footer-location {
+  @apply mt-3 text-white/70;
+}
+
+.footer .footer-top-content .footer-col .footer-email {
+  @apply mt-1 text-white/70 font-light;
+}
+
+.footer .footer-top-content .footer-col .footer-form .input-group {
+  @apply flex justify-between border border-white/70 rounded-full py-3 md:py-2 px-5 md:px-3;
+}
+
+.footer .footer-top-content .footer-col .footer-form .input-group input {
+  @apply text-white/70 outline-none border-none transition-all duration-300 
+}
+
+.footer .footer-top-content .footer-col .footer-form .input-group button {
+  @apply bg-linear-to-r from-japonica to-[#E4B372] rounded-full py-1 px-6 uppercase text-white tracking-[2px] cursor-pointer transition-all duration-300 hover:scale-105;
+}
+
+.footer .footer-bottom-content {
+  @apply flex flex-col md:flex-row md:justify-between gap-2 mt-6 text-white/60;
+}
+
+.footer .footer-bottom-content .copyright {
+  @apply text-sm;
+}
+
+.footer .footer-bottom-content .footer-bottom-tagline {
+  @apply uppercase tracking-[2px] text-sm;
+}
