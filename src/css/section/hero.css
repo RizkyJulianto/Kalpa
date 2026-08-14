@@ -1,5 +1,9 @@
 body {
-    @apply h-[10000px]
+    @apply h-[20000px]
+}
+
+:root {
+  interpolate-size: allow-keywords;
 }
 
 .background {

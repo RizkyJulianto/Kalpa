@@ -1,0 +1,52 @@
+.faq {
+  @apply w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-y-10 px-6 lg:px-14 py-16 lg:py-8 bg-merino;
+}
+
+.faq .faq-heading .faq-section-label {
+  @apply text-japonica font-sans text-sm md:text-lg lg:text-sm uppercase font-normal tracking-[0.2rem];
+}
+
+.faq .faq-heading .faq-section-title {
+  @apply text-3xl md:text-5xl lg:text-6xl  mt-3 font-serif text-black/80;
+}
+
+.faq .faq-heading .faq-section-title span {
+  @apply italic text-4xl md:text-6xl font-semibold;
+}
+
+.faq .faq-heading .faq-section-subtitle {
+  @apply mt-4 text-black/80 md:text-xl lg:max-w-[70%];
+}
+
+.faq .faq-content details {
+  @apply border-y border-black/10 py-7 transition-all duration-300 overflow-hidden;
+}
+
+.faq-content details::details-content {
+  @apply opacity-0 block-0;
+  transition:
+    block-size 0.35s ease,
+    opacity 0.3s ease,
+    content-visibility 0.35s allow-discrete;
+}
+
+
+.faq-content details[open]::details-content {
+  @apply opacity-100 block-auto
+}
+
+.faq .faq-content summary {
+  @apply list-none font-serif text-xl md:text-2xl   flex justify-between items-center cursor-pointer;
+}
+
+.faq .faq-content span:nth-child(1) {
+    @apply max-w-[80%] md:max-w-[90%] 
+}
+
+.faq .faq-content .icon-arrow svg {
+  @apply text-black/60 transition-all duration-300 group-open:rotate-180;
+}
+
+.faq .faq-content .answer-faq {
+  @apply mt-5 text-black/80 md:text-lg;
+}
