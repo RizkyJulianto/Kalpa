@@ -3,7 +3,7 @@
 }
 
 .product .product-heading {
-    @apply grid grid-cols-1 
+    @apply grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] lg:items-center 
 }
 
 .product .product-heading .product-title {
