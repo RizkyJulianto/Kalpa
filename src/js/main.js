@@ -56,7 +56,7 @@ const moodProducts = {
     materials: "LAVENDER · CHAMOMILE · CEDARWOOD",
     description:
       "Aroma lavender dan kayu cedar yang menenangkan saraf, menciptakan suasana tenang untuk membantumu lepas dari kelelahan seharian.",
-    image: "src/assets/images/malam-hening.jpg",
+    image: "src/assets/images/malam-hening.webp",
   },
   fokus: {
     label: "91% MATCH FOR YOUR MOOD",
@@ -64,7 +64,7 @@ const moodProducts = {
     materials: "EUCALYPTUS · PEPPERMINT · CITRUS",
     description:
       "Kombinasi segar eucalyptus dan peppermint yang menjernihkan pikiran, meningkatkan fokus saat ngoding, dan menjaga energi tetap stabil.",
-    image: "src/assets/images/embun-rumpun.jpg",
+    image: "src/assets/images/embun-rumpun.webp",
   },
   stres: {
     label: "94% MATCH FOR YOUR MOOD",
@@ -72,7 +72,7 @@ const moodProducts = {
     materials: "PATCHOULI · BERGAMOT · SANDALWOOD",
     description:
       "Vetiver menurunkan tempo napas, aroma tanah basah menandai malam sudah selesai. Nyalakan 30 menit sebelum tidur.",
-    image: "src/assets/images/tanah-basah.jpg",
+    image: "src/assets/images/tanah-basah.webp",
     link: "#product-tanah-basah",
   },
   santai: {
@@ -81,7 +81,7 @@ const moodProducts = {
     materials: "VANILLA · CINNAMON · AMBER",
     description:
       "Sentuhan manis vanilla dan kehangatan rempah yang lembut, sempurna menemani secangkir kopi, membaca buku, atau rehat di akhir pekan.",
-    image: "src/assets/images/senja-teduh.jpg",
+    image: "src/assets/images/senja-teduh.webp",
   },
 };
 
